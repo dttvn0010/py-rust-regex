@@ -4,6 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "py-rust-regex"
+urls = { homepage = "https://github.com/dttvn0010/py-rust-regex" }
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
@@ -12,4 +13,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 [tool.maturin]
+sdist-include = ["README.md", "LICENCE"]
+
 features = ["pyo3/extension-module"]
+
